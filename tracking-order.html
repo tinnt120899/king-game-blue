@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          name="viewport">
+    <title>Title</title>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="slider/flickity.css" rel="stylesheet">
+
+    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/976730/snowstorm.js"></script>-->
+</head>
+
+<body>
+
+<div class="container-fluid m-0 p-0">
+
+    <nav class="navbar navbar-expand-xl align-items-end bg-top-nav p-0">
+        <!--  Show this only on mobile to medium screens  -->
+        <a class="ml-sm-2 navbar-brand d-xl-none align-items-center" href="index.html">
+            <img class="ml-2" height="56" src="img/gamezone-logo@3x.png">
+        </a>
+
+        <button aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler parent-elem mb-2 mr-sm-2 "
+                data-target="#navbarToggle" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars text-primary"></i>
+            </span>
+        </button>
+
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+            <!--   Show this only lg screens and up   -->
+            <a class="navbar-brand d-none d-xl-block" href="index.html">
+                <img class="ml-2" height="56" src="img/gamezone-logo@3x.png">
+            </a>
+
+            <ul class="navbar-nav align-items-center text-center">
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="product.html">Games</a>
+                </li>
+                <li class="nav-item active mr-3">
+                    <a class="nav-link title-menu" href="tracking-order.html">Order</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="promotion.html">Promotions</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <input class="w-100 searchInput" placeholder="Enter keywords to search..."
+                           style="border: solid 1px #707070;background-color: #ffffff;"
+                           type="text">
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-user-circle text-white fa-2x"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row justify-content-center bg-header m-0">
+        <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 text-center text-white">
+            <h3 class="font-weight-bold">ORDER</h3>
+            <span class="font-weight-normal font-14">Shop our most popular products for this season</span>
+            <input class="searchInput bg-white w-100 mt-3 m-0" placeholder="Enter keywords to search..." type="text">
+        </div>
+    </div>
+
+    <div class="row justify-content-center m-0 mt-5">
+
+        <div class="col-1"></div>
+        <div class="col-10 mb-5">
+
+            <h5 class="font-weight-bold ml-2">Verifying Order</h5>
+            <div class="card border-radius table-responsive table-scroll" id="custom-scrollbar">
+                <table class="table table-hover main-table">
+                    <thead class="w-100">
+                    <tr class="">
+                        <th class="">Order ID</th>
+                        <th class="">Game / App</th>
+                        <th class="">Amount</th>
+                        <th class="">Ingame Unit</th>
+                        <th class="">Bank Invoice</th>
+                        <th class="">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody class="tbody-scroll">
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>20,000 GP</td>
+                        <td><img height="24" src="img/ic-drive-image@3x.png"><a class="text-muted" href="#">U028472-T02012021</a>
+                        </td>
+                        <td class="text-primary">Cancel Order</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>20,000 GP</td>
+                        <td><img height="24" src="img/ic-drive-image@3x.png"><a class="text-muted" href="#">U028472-T02012021</a>
+                        </td>
+                        <td class="text-primary">Cancel Order</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>20,000 GP</td>
+                        <td><img height="24" src="img/ic-drive-image@3x.png"><a class="text-muted" href="#">U028472-T02012021</a>
+                        </td>
+                        <td class="text-primary">Cancel Order</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>20,000 GP</td>
+                        <td><img height="24" src="img/ic-drive-image@3x.png"><a class="text-muted" href="#">U028472-T02012021</a>
+                        </td>
+                        <td class="text-primary">Cancel Order</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>20,000 GP</td>
+                        <td><img height="24" src="img/ic-drive-image@3x.png"><a class="text-muted" href="#">U028472-T02012021</a>
+                        </td>
+                        <td class="text-primary">Cancel Order</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>20,000 GP</td>
+                        <td><img height="24" src="img/ic-drive-image@3x.png"><a class="text-muted" href="#">U028472-T02012021</a>
+                        </td>
+                        <td class="text-primary">Cancel Order</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="col-1"></div>
+
+        <div class="col-md-2 col-10 p-3">
+            <h5 class="font-weight-bold m-0">Order History</h5>
+        </div>
+        <div class="col-md-8 p-3 d-md-block d-none">
+            <div class="btn-group float-right mb-1" role="group">
+                <button aria-expanded="false" aria-haspopup="true" class="btn border-radius-dropdown dropdown-toggle"
+                        data-toggle="dropdown" id="btnGroupDrop3" type="button">
+                    All Status
+                </button>
+                <div aria-labelledby="btnGroupDrop3" class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Success</a>
+                    <a class="dropdown-item" href="#">Canceled</a>
+                    <a class="dropdown-item" href="#">Failed</a>
+                </div>
+            </div>
+
+            <div class="input-group w-300px float-right m-0 mr-md-3 mr-sm-0 mb-3">
+                <div class="input-group-prepend">
+                    <div class="input-group-text input-group-time-custom sub-title-info bg-white">Time</div>
+                </div>
+                <select class="form-control" style="border-left: 0">
+                    <option>20 Jan, 2021 - 20 Feb, 2021</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-10 mb-5">
+
+            <div class="card border-radius table-responsive">
+                <table class="table table-hover">
+                    <thead class="w-100 bg-thead">
+                    <tr class="">
+                        <th class="">Order ID</th>
+                        <th class="">Game / App</th>
+                        <th class="">Amount</th>
+                        <th class="">Ingame Unit</th>
+                        <th class="">Status</th>
+                        <th class="">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody class="">
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>1,000,000,000 Alz</td>
+                        <td><span class="bg-success text-white border-radius pl-2 pr-2">Success</span></td>
+                        <td class="text-primary">Reorder</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>2,400 Crystal</td>
+                        <td><span class="bg-secondary text-white border-radius pl-2 pr-2">Cancel</span></td>
+                        <td>
+                            <span class="text-primary mr-2">Reorder</span>
+                            <span class="text-danger">Delete</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>2,400 Crystal</td>
+                        <td><span class="bg-danger text-white border-radius pl-2 pr-2">Failed</span></td>
+                        <td class="sub-title-info">
+                            <i class="fas fa-info-circle mr-1"></i><em>Incorrect information.</em>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>1,000,000,000 Alz</td>
+                        <td><span class="bg-success text-white border-radius pl-2 pr-2">Success</span></td>
+                        <td class="text-primary">Reorder</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="font-weight-bold">#G826491</span><br>
+                            <span class="sub-title-info">21:30 - 17 Jan, 2021</span>
+                        </td>
+                        <td>Call of Duty: Modern Warfare.</td>
+                        <td>
+                            <span class="font-weight-bold">$ 200</span><br>
+                            <span class="sub-title-info">02 packes</span>
+                        </td>
+                        <td>1,000,000,000 Alz</td>
+                        <td><span class="bg-success text-white border-radius pl-2 pr-2">Success</span></td>
+                        <td class="text-primary">Reorder</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="row m-0 p-5 text-center">
+                    <div class="col-12">
+                        <button class="btn btn-none float-right" type="button">
+                            <i class="fas fa-angle-right"></i>
+                        </button>
+
+                        <button class="btn btn-none float-right mr-2" type="button">
+                            <i class="fas fa-angle-left"></i>
+                        </button>
+
+                        <span class="sub-title-info float-right mr-3 pt-2">
+                             1 - 05 of 190
+                        </span>
+
+                        <div class="form-group float-right select-paging mr-3">
+                            <select class="form-control">
+                                <option>5</option>
+                                <option>10</option>
+                                <option>25</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                        </div>
+
+                        <span class="sub-title-info float-right mr-1 pt-2">Items per page</span>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-center bg-top-footer align-items-center
+                text-center m-0 p-2 w-100 hr-bottom">
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/paypal@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/payoneer@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/skrill@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/visa@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/alipay@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/wechat-pay@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/master-card@3x.png">
+        </div>
+    </div>
+
+    <div class="footer m-0 pt-5 pb-4 pl-5 pr-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 text-center">
+                <img class="mb-4" height="120" src="img/gamezone-logo@3x.png">
+                <p class="sub-title">
+                    The security our user's accounts and personal information, are our main priority.
+                    The security our user's accounts and personal information, are our main priority.
+                </p>
+                <div class="row justify-content-center mt-4 mb-3 align-items-end">
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/fb-icon@3x.png"><br>
+                        <span class="sub-title">Facebook</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/skype@3x.png"><br>
+                        <span class="sub-title">Skype</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/telegram@3x.png"><br>
+                        <span class="sub-title">Telegram</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/viber@3x.png"><br>
+                        <span class="sub-title">Viber</span>
+                    </div>
+                    <div class="col p-0 mt-1 text-center">
+                        <img height="40" src="img/wechat-icon@3x.png"><br>
+                        <span class="sub-title">Wechat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <hr style="background: #d3d3d3">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center">
+                <span class="sub-title"><i class="far fa-copyright"></i> 2020. All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

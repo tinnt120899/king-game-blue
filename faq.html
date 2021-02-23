@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          name="viewport">
+    <title>Title</title>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <link href="slider/flickity.css" rel="stylesheet">
+
+    <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/976730/snowstorm.js"></script>-->
+</head>
+
+<body>
+
+<div class="container-fluid faq-container m-0 p-0">
+
+    <nav class="navbar navbar-expand-xl align-items-end bg-top-nav p-0">
+        <!--  Show this only on mobile to medium screens  -->
+        <a class="ml-sm-2 navbar-brand d-xl-none align-items-center" href="index.html">
+            <img class="ml-2" height="56" src="img/gamezone-logo@3x.png">
+        </a>
+
+        <button aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler parent-elem mb-2 mr-sm-2 "
+                data-target="#navbarToggle" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon">
+                <i class="fas fa-bars text-primary"></i>
+            </span>
+        </button>
+
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarToggle">
+            <!--   Show this only lg screens and up   -->
+            <a class="navbar-brand d-none d-xl-block" href="index.html">
+                <img class="ml-2" height="56" src="img/gamezone-logo@3x.png">
+            </a>
+
+            <ul class="navbar-nav align-items-center text-center">
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="product.html">Games</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="tracking-order.html">Order</a>
+                </li>
+                <li class="nav-item active mr-3">
+                    <a class="nav-link title-menu" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <a class="nav-link title-menu" href="promotion.html">Promotions</a>
+                </li>
+                <li class="nav-item mr-3">
+                    <input class="w-100 searchInput" placeholder="Enter keywords to search..."
+                           style="border: solid 1px #707070;background-color: #ffffff;"
+                           type="text">
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-user-circle text-white fa-2x"></i>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row justify-content-center bg-header m-0">
+        <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 text-center text-white">
+            <h3 class="font-weight-bold">FAQ</h3>
+            <span class="font-weight-normal font-14">How can we help you ?</span>
+            <input class="searchInput bg-white w-100 mt-3 m-0" placeholder="Search for answers…" type="text">
+        </div>
+    </div>
+
+    <div class="row justify-content-center m-0 mt-5 mb-5">
+
+        <div class="col-md-8 col-sm-10 mb-3">
+            <h5 class="font-weight-bold">How to make an order?</h5>
+        </div>
+
+        <div class="col-md-8 col-sm-10 mb-5">
+            <div class="row">
+
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <img class="mb-3" height="60" src="img/shopping-cart@3x.png">
+                    <div class="mb-1"><span class="circle text-center mr-1">1</span>Select your pack</div>
+                    <p class="sub-content">Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu
+                        condimentum.
+                        Pellentesque habitant morbi tristique senectus et netus </p>
+                </div>
+
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <img class="mb-3" height="60" src="img/list-acct-icon@3x.png">
+                    <div class="mb-1"><span class="circle text-center mr-1">2</span>Input ingame account</div>
+                    <p class="sub-content">Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu
+                        condimentum.
+                        Pellentesque habitant morbi tristique senectus et netus </p>
+                </div>
+
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <img class="mb-3" height="60" src="img/big-icon-payment@3x.png">
+                    <div class="mb-1"><span class="circle text-center mr-1">3</span>Payment</div>
+                    <p class="sub-content">Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu
+                        condimentum.
+                        Pellentesque habitant morbi tristique senectus et netus </p>
+                </div>
+
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <img class="mb-3" height="60" src="img/big-icon-verify@3x.png">
+                    <div class="mb-1"><span class="circle text-center mr-1">4</span>Waiting for verifying</div>
+                    <p class="sub-content">Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu
+                        condimentum.
+                        Pellentesque habitant morbi tristique senectus et netus </p>
+                </div>
+
+                <div class="col-xl col-lg-4 col-md-6 col-sm-12">
+                    <img class="mb-3" height="60" src="img/big-icon-cash-in-ingame@3x.png">
+                    <div class="mb-1"><span class="circle text-center mr-1">5</span>Transaction successful</div>
+                    <p class="sub-content">Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu
+                        condimentum.
+                        Pellentesque habitant morbi tristique senectus et netus </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-8 col-sm-10 mb-3">
+            <h5 class="font-weight-bold">Another Frequently Asked Questions</h5>
+        </div>
+
+        <div class="col-md-8 col-sm-10">
+            <div id="accordion">
+
+                <div class="custom-title-faq row align-items-center m-0 mb-3" id="headingOne">
+                    <div class="col-10 p-2">
+                        <span class="mb-0 font-weight-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
+                        </span>
+                    </div>
+                    <div class="col-2">
+                        <button aria-controls="collapseOne" aria-expanded="true" class="btn btn-link float-right"
+                                data-target="#collapseOne" data-toggle="collapse">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div aria-labelledby="headingOne" class="collapse bg-white mb-3 show" data-parent="#accordion"
+                     id="collapseOne">
+                    <div class="custom-body-faq p-3" id="custom-scrollbar">
+                        <p>
+                            Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu condimentum.
+                            Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur
+                            interdum, tellus quis bibendum vulputate, quam tortor accumsan nulla, quis convallis est
+                            arcu
+                            sed nisl. Quisque porttitor laoreet luctus. Donec ac metus bibendum mauris scelerisque
+                            mattis eu
+                            sit amet mauris. Vivamus at mauris eu dolor scelerisque suscipit a a metus. Phasellus
+                            maximus
+                            luctus urna at ornare. Phasellus commodo tincidunt felis. Integer cursus quam lobortis,
+                            sagittis
+                            mauris sit amet, suscipit nibh. Duis erat tortor, tempus nec leo non, volutpat dignissim
+                            leo.
+                            Donec aliquet augue id tortor mattis, id ornare elit varius.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="custom-title-faq row align-items-center m-0 mb-3" id="headingTwo">
+                    <div class="col-10 p-2">
+                        <span class="mb-0 font-weight-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
+                        </span>
+                    </div>
+                    <div class="col-2">
+                        <button aria-controls="collapseTwo" aria-expanded="false" class="btn btn-link float-right"
+                                data-target="#collapseTwo" data-toggle="collapse">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div aria-labelledby="headingTwo" class="collapse bg-white mb-3" data-parent="#accordion"
+                     id="collapseTwo">
+                    <div class="custom-body-faq p-3" id="custom-scrollbar">
+                        <p>
+                            Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu condimentum.
+                            Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur
+                            interdum, tellus quis bibendum vulputate, quam tortor accumsan nulla, quis convallis est
+                            arcu
+                            sed nisl. Quisque porttitor laoreet luctus. Donec ac metus bibendum mauris scelerisque
+                            mattis eu
+                            sit amet mauris. Vivamus at mauris eu dolor scelerisque suscipit a a metus. Phasellus
+                            maximus
+                            luctus urna at ornare. Phasellus commodo tincidunt felis. Integer cursus quam lobortis,
+                            sagittis
+                            mauris sit amet, suscipit nibh. Duis erat tortor, tempus nec leo non, volutpat dignissim
+                            leo.
+                            Donec aliquet augue id tortor mattis, id ornare elit varius.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="custom-title-faq row align-items-center m-0 mb-3" id="headingThree">
+                    <div class="col-10 p-2">
+                        <span class="mb-0 font-weight-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
+                        </span>
+                    </div>
+                    <div class="col-2">
+                        <button aria-controls="collapseThree" aria-expanded="false" class="btn btn-link float-right"
+                                data-target="#collapseThree" data-toggle="collapse">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div aria-labelledby="headingThree" class="collapse bg-white" data-parent="#accordion"
+                     id="collapseThree">
+                    <div class="custom-body-faq p-3" id="custom-scrollbar">
+                        <p>
+                            Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu condimentum.
+                            Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur
+                            interdum, tellus quis bibendum vulputate, quam tortor accumsan nulla, quis convallis est
+                            arcu
+                            sed nisl. Quisque porttitor laoreet luctus. Donec ac metus bibendum mauris scelerisque
+                            mattis eu
+                            sit amet mauris. Vivamus at mauris eu dolor scelerisque suscipit a a metus. Phasellus
+                            maximus
+                            luctus urna at ornare. Phasellus commodo tincidunt felis. Integer cursus quam lobortis,
+                            sagittis
+                            mauris sit amet, suscipit nibh. Duis erat tortor, tempus nec leo non, volutpat dignissim
+                            leo.
+                            Donec aliquet augue id tortor mattis, id ornare elit varius.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="custom-title-faq row align-items-center m-0 mb-3" id="heading4">
+                    <div class="col-10 p-2">
+                        <span class="mb-0 font-weight-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
+                        </span>
+                    </div>
+                    <div class="col-2">
+                        <button aria-controls="collapse4" aria-expanded="false" class="btn btn-link float-right"
+                                data-target="#collapse4" data-toggle="collapse">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div aria-labelledby="heading4" class="collapse bg-white" data-parent="#accordion" id="collapse4">
+                    <div class="custom-body-faq p-3" id="custom-scrollbar">
+                        <p>
+                            Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu condimentum.
+                            Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur
+                            interdum, tellus quis bibendum vulputate, quam tortor accumsan nulla, quis convallis est
+                            arcu
+                            sed nisl. Quisque porttitor laoreet luctus. Donec ac metus bibendum mauris scelerisque
+                            mattis eu
+                            sit amet mauris. Vivamus at mauris eu dolor scelerisque suscipit a a metus. Phasellus
+                            maximus
+                            luctus urna at ornare. Phasellus commodo tincidunt felis. Integer cursus quam lobortis,
+                            sagittis
+                            mauris sit amet, suscipit nibh. Duis erat tortor, tempus nec leo non, volutpat dignissim
+                            leo.
+                            Donec aliquet augue id tortor mattis, id ornare elit varius.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="custom-title-faq row align-items-center m-0 mb-3" id="heading5">
+                    <div class="col-10 p-2">
+                        <span class="mb-0 font-weight-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit ?
+                        </span>
+                    </div>
+                    <div class="col-2">
+                        <button aria-controls="collapse5" aria-expanded="false" class="btn btn-link float-right"
+                                data-target="#collapse5" data-toggle="collapse">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div aria-labelledby="heading5" class="collapse bg-white" data-parent="#accordion" id="collapse5">
+                    <div class="custom-body-faq p-3" id="custom-scrollbar">
+                        <p>
+                            Fusce sit amet nibh nec ante porta laoreet. Aenean viverra in lorem eu condimentum.
+                            Pellentesque
+                            habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur
+                            interdum, tellus quis bibendum vulputate, quam tortor accumsan nulla, quis convallis est
+                            arcu
+                            sed nisl. Quisque porttitor laoreet luctus. Donec ac metus bibendum mauris scelerisque
+                            mattis eu
+                            sit amet mauris. Vivamus at mauris eu dolor scelerisque suscipit a a metus. Phasellus
+                            maximus
+                            luctus urna at ornare. Phasellus commodo tincidunt felis. Integer cursus quam lobortis,
+                            sagittis
+                            mauris sit amet, suscipit nibh. Duis erat tortor, tempus nec leo non, volutpat dignissim
+                            leo.
+                            Donec aliquet augue id tortor mattis, id ornare elit varius.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+
+                        <p>
+                            Maecenas in purus lacinia, egestas elit eu, scelerisque nulla. Donec sed leo in arcu lacinia
+                            scelerisque. Phasellus enim purus, porta sit amet nisi volutpat, bibendum vehicula turpis.
+                            Mauris volutpat neque sit amet elementum luctus. Nulla viverra neque sem, sed feugiat risus
+                            consequat et. Integer pellentesque leo ac molestie faucibus. Praesent at accumsan ante,
+                            accumsan
+                            feugiat arcu. Integer sed tincidunt nisl. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Aenean lacinia vel ex quis faucibus. Nam laoreet eget lorem a auctor. Suspendisse ac
+                            massa
+                            id est scelerisque tristique quis vel urna. Curabitur metus nulla, sollicitudin nec suscipit
+                            ut,
+                            commodo in elit. Praesent neque augue, mollis a scelerisque bibendum, cursus sed nunc.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row m-0 mt-5 mb-5 p-5"></div>
+
+    <div class="row justify-content-center bg-top-footer align-items-center
+                text-center m-0 p-2 w-100 hr-bottom">
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/paypal@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/payoneer@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/skrill@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/visa@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/alipay@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/wechat-pay@3x.png">
+        </div>
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2 m-2">
+            <img height="40" src="img/master-card@3x.png">
+        </div>
+    </div>
+
+    <div class="footer m-0 pt-5 pb-4 pl-5 pr-5">
+        <div class="row justify-content-center mb-5">
+            <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 text-center">
+                <img class="mb-4" height="120" src="img/gamezone-logo@3x.png">
+                <p class="sub-title">
+                    The security our user's accounts and personal information, are our main priority.
+                    The security our user's accounts and personal information, are our main priority.
+                </p>
+                <div class="row justify-content-center mt-4 mb-3 align-items-end">
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/fb-icon@3x.png"><br>
+                        <span class="sub-title">Facebook</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/skype@3x.png"><br>
+                        <span class="sub-title">Skype</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/telegram@3x.png"><br>
+                        <span class="sub-title">Telegram</span>
+                    </div>
+                    <div class="col p-0 mr-2 mt-1 text-center">
+                        <img height="40" src="img/viber@3x.png"><br>
+                        <span class="sub-title">Viber</span>
+                    </div>
+                    <div class="col p-0 mt-1 text-center">
+                        <img height="40" src="img/wechat-icon@3x.png"><br>
+                        <span class="sub-title">Wechat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <hr style="background: #d3d3d3">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-2">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center">
+                <span class="sub-title"><i class="far fa-copyright"></i> 2020. All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
