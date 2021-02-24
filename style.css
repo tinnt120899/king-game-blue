@@ -344,6 +344,7 @@ body {
 
 .card-right {
     background-color: #fff;
+    height: 100%;
 }
 
 .card-input {
